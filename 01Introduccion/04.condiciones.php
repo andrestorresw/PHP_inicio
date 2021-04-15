@@ -19,15 +19,30 @@ $dia = "domingoo";
 
 switch ($dia) {
     case 'sabado':
-        echo "Es sabado";
+        echo "Es sabado<br>";
         break;
     case 'domingo':
-        echo "Es domingo";
+        echo "Es domingo<br>";
         break;
     default:
-        echo "No se que es";
+        echo "No se que es<br>";
         break;
 }
+
+
+$x = 0;
+
+while ($x < 10){
+    echo $x, '<br>';
+    $x = $x + 1;
+}
+
+echo "<br>";
+
+for($i = 0; $i < 11; $i++){
+    echo $i, '<br>';
+}
+
 
 
 ?>
