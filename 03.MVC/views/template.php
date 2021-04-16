@@ -10,18 +10,21 @@
     <h1>Logo</h1>
 </header>
 
-<nav>
-    <ul>
-        <li> <a href="">Inicio</a> </li>
-        <li> <a href="">Nosotros</a> </li>
-        <li> <a href="">Servicios</a> </li>
-        <li> <a href="">Contacto</a> </li>
-    </ul>
-</nav>
+<?php
+    include "modules/navegacion.php";
+?>
 
 <section>
-    <h1>Pagina de Inicio</h1>
+
+    <?php
+        $mvc = new MvcController();
+        $mvc -> enlacesPaginasController();
+
+    ?>
+
 </section>
+
+
 
 </body>
 </html>
