@@ -1,23 +1,13 @@
 <?php
 
-class MvcController{
-    // LLamada a la plantilla
-    public function plantilla(){
-        
-        // include() se utiliza para invocar el archivo que contiene cófigo html. 
-        include "views/template.php";
-    }
+class  MvcController{
 
-    // Interaccion del usuario
-    public function enlacesPaginasController(){
-
-        $enlacesController = $_GET["action"];
+    public function callTemplate(){
         
-        echo $enlacesController;
-        
-        $respuesta = EnlacesPaginas::enlacesPaginasModelo($enlacesController);
+        include "views/template.php"; //Trae desde vistas para controlarlo y mandarlo al index
 
     }
+
 }
 
 ?>

@@ -8,10 +8,10 @@
 
 // Si requerimos el mismo código más de una vez corremos el riesgo de redeclaraciones de variables, funciones o clases.
 
-require_once "controllers/controller.php";
-require_once "models/model.php";
+require_once "controllers/controller.php"; //Trae el archivo y lo muesta en la pagina
 
-$mvc = new MvcController();
-$mvc -> plantilla();
+$mvc = new MvcController(); //Creo el objeto de la clase que esta en controller que a su vez incluye template.php
+
+$mvc -> callTemplate(); //Invoco la funcion que incluye template.php
 
 ?>
