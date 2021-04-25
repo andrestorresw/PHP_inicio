@@ -65,12 +65,12 @@ include "modules/navegacion.php"; //Aqui invoco la navegacion para que se muestr
 ?>
 
 <section>
-<?php
 
+<?php
 $mvc = new mvcController();
 $mvc -> enlacesPaginasController();
-
 ?>
+
 </section>
 
     

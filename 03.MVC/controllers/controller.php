@@ -13,8 +13,11 @@ class mvcController{
     //Interaccion del usuario
     public function enlacesPaginasController(){
 
-
-        $enlaces = $_GET["action"];
+        if(isset($_GET["action"])){
+            $enlaces = $_GET["action"];
+        }else{
+            $enlaces = "inicio";
+        }
 
         $respuesta = enlacesPaginas::enlacesPaginasModel($enlaces);
 
